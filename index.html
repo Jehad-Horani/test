@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .slider {
+            height: 250px;
+            margin: auto;
+            position: relative;
+            width: 90%;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+        }
+
+        .slide-track {
+            display: flex;
+            width: calc(250px*18);
+            animation: scroll 40s linear infinite;
+        }
+        @keyframes scroll{
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(calc(-250px * 9));
+            }
+        }
+        .slide{
+            height: 200px;
+            width: 250px;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+
+
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+            <div class="slide"><img src="pics/ieeesight1.png" alt=""></div>
+        </div>
+    </div>
+</body>
+
+</html>
